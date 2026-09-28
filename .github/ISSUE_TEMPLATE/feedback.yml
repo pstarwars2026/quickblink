@@ -1,0 +1,30 @@
+name: Support or feedback
+description: Report a problem or suggest an improvement.
+title: "[Feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: "This report will be public. Do not share account details or personal information."
+  - type: input
+    id: device
+    attributes:
+      label: Device and iOS version
+      placeholder: "For example: iPhone 16, iOS 27"
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Game mode
+      options:
+        - Classic
+        - Hold & Release
+        - Decoy
+        - Choice
+        - Sound
+        - Not mode-specific
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What happened, or what would you like improved?
+      description: Include steps and what you expected. Keep private information out.
+    validations:
+      required: true
